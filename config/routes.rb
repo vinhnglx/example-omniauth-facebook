@@ -1,9 +1,22 @@
 ExampleOmniauthFacebook::Application.routes.draw do
+  # The first route will tie the default omniauth provider callback to our sessions controller.
+  get 'auth/:provider/callback', to: 'sessions#create'
+
+  # The second route provides graceful error handling in case of a failure
+  get 'auth/failure', to: redirect('/')
+
+  # The third route lets the user logout.
+  get 'signout', to: 'sessions#destroy', as: 'signout'
+
+  resources :sessions, only: [:create, :destroy]
+
+  resources :blogs
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'blogs#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
