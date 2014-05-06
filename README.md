@@ -7,8 +7,11 @@ Today I'll show you the first gem that need to know when you working with Rails.
 
 Some links to reference:
 
-* Homepage: [Omniauth](https://github.com/mkdynamic/omniauth-facebook)
+* Homepage: [Omniauth](https://github.com/intridea/omniauth)
 
-* Article: [Omniauth review](https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview)
+* Articles: 
+
+	* [Omniauth review](https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview)
+	* [Authentication with Facebook and OmniAuth](https://coderwall.com/p/bsfitw)
 
 * Screencast: [Facebook authentication](http://railscasts.com/episodes/360-facebook-authentication?view=asciicast)
