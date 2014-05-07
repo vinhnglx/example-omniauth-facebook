@@ -3,7 +3,7 @@ Omniauth Facebook
 
 Hi guys,
 
-Today I'll show you the first gem that need to know when you working with Rails. This gem used in Facebook authentication.
+This is example about Authentication in Rails application. Focus into OmniAuth gem.
 
 Some links to reference:
 
